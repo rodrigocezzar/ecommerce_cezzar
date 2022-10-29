@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EcommerceCezzar</title>
+    <title>Bem vindo ao Ecommerce Showzim</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,7 +11,9 @@
   </head>
 
   <body>
-    <%= render 'layouts/shared/flash' if flash.present? %>
+    <!-- Navigation-->
+    <%= render 'layouts/store/nav' %>
     <%= yield %>
+    <%= render 'layouts/store/footer' %>
   </body>
 </html>
