@@ -6,4 +6,4 @@ import * as bootstrap from "bootstrap";
 import "./sbadmin/sbadmin.js";
 // import "./sbadmin/jquery-easing/jquery.easing.min.js";
 
-Turbo.session.drive = false;
+// Turbo.session.drive = false;
