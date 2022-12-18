@@ -17,12 +17,7 @@
                 label: false,
                 placeholder: 'E-mail',
                 input_html: { autocomplete: "email" }%>
-    <%= f.input :phone,
-                required: true,
-                autofocus: true,
-                label: false,
-                placeholder: 'Telefone',
-                input_html: { autocomplete: "phone" }%>
+    <%= f.input :phone, input_html:{ class: "mask-phone" }, label: false, placeholder: 'Telefone' %>
     <%= f.input :password,
                 required: true,
                 label: false,

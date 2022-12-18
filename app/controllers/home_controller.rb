@@ -2,5 +2,7 @@
 
 # class users
 class HomeController < ApplicationController
-  def index; end
+  def index
+    @products = Product.all.map { |product| ProductPresenter.new(product) }
+  end
 end
