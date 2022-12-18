@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'products/index'
   devise_for :users
 
-  get 'home/index'
   root to: 'home#index'
+  resources :settings, only: [:index] do
+    collection do
+      patch :update_user
+    end
+  end
 
   namespace :admin do
     root to: 'home#index'

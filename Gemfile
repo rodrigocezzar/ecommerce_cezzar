@@ -5,12 +5,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 
+gem 'aws-sdk-s3', '~> 1.117', '>= 1.117.1'
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
+gem 'image_processing', '~> 1.12', '>= 1.12.2'
 gem 'jbuilder'
 gem 'jsbundling-rails'
 gem 'pg', '~> 1.4', '>= 1.4.3'
 gem 'puma', '~> 5.0'
+gem 'pundit', '~> 2.2'
 gem 'rails', '~> 7.0.4'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
